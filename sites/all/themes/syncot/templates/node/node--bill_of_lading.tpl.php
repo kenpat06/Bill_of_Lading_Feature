@@ -191,86 +191,240 @@ if ($node = menu_get_object()) {
 <table width="100%" class="table table-striped table-bordered">
   <tbody>
     <tr>
-      <td width="10%">Units</td>
-      <td width="60%">Description</td>
-      <td width="10%">Gross</td>
-      <td width="10%">Tare</td>
-      <td width="10%">Net</td>
+      <th width="10%">Units</th>
+      <th width="60%">Description</th>
+      <th width="10%">Gross</th>
+      <th width="10%">Tare</th>
+      <th width="10%">Net</th>
     </tr>
     <tr>
-      <td width="10%"><?php print $node->field_units['und'][0]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][0]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][0]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][0]['value']; ?></td>
+      <td width="00%">
+        <?php if (isset($node->field_units['und'][0]['value'])) {
+          print $node->field_units['und'][0]['value'];
+        } ?>
+      </td>
+      <td width="00%">
+      <?php if (isset($node->field_description['und'][0]['value'])) {
+          print $node->field_description['und'][0]['value'];
+        } ?>
+      </td>
+      <td width="00%">
+        <?php if (isset($node->field_gross['und'][0]['value'])) {
+          print $node->field_gross['und'][0]['value']; 
+        } ?>
+      </td>
+      <td width="00%">
+        <?php if (isset($node->field_tare['und'][0]['value'])) {
+        print $node->field_tare['und'][0]['value'];
+        } ?>
+      </td>
+      <td width="00%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][1]['value'])) {
+          print $node->field_units['und'][1]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+      <?php if (isset($node->field_description['und'][1]['value'])) {
+          print $node->field_description['und'][1]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][1]['value'])) {
+          print $node->field_gross['und'][1]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][1]['value'])) {
+        print $node->field_tare['und'][1]['value'];
+        } ?>
+      </td>
       <td width="10%">&nbsp;</td>
     </tr>
     <tr>
-      <td width="10%"><?php print $node->field_units['und'][1]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][1]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][1]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][1]['value']; ?></td>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][2]['value'])) {
+          print $node->field_units['und'][2]['value'];
+        } ?>
+      </td>
+      <td width="20%">
+      <?php if (isset($node->field_description['und'][2]['value'])) {
+          print $node->field_description['und'][2]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][2]['value'])) {
+          print $node->field_gross['und'][2]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][2]['value'])) {
+        print $node->field_tare['und'][2]['value'];
+        } ?>
+      </td>
       <td width="10%">&nbsp;</td>
     </tr>
     <tr>
-      <td width="10%"><?php print $node->field_units['und'][2]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][2]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][2]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][2]['value']; ?></td>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][3]['value'])) {
+          print $node->field_units['und'][3]['value'];
+        } ?>
+      </td>
+      <td width="30%">
+      <?php if (isset($node->field_description['und'][3]['value'])) {
+          print $node->field_description['und'][3]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][3]['value'])) {
+          print $node->field_gross['und'][3]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][3]['value'])) {
+        print $node->field_tare['und'][3]['value'];
+        } ?>
+      </td>
       <td width="10%">&nbsp;</td>
     </tr>
     <tr>
-      <td width="10%"><?php print $node->field_units['und'][3]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][3]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][3]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][3]['value']; ?></td>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][4]['value'])) {
+          print $node->field_units['und'][4]['value'];
+        } ?>
+      </td>
+      <td width="40%">
+      <?php if (isset($node->field_description['und'][4]['value'])) {
+          print $node->field_description['und'][4]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][4]['value'])) {
+          print $node->field_gross['und'][4]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][4]['value'])) {
+        print $node->field_tare['und'][4]['value'];
+        } ?>
+      </td>
       <td width="10%">&nbsp;</td>
     </tr>
     <tr>
-      <td width="10%"><?php print $node->field_units['und'][4]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][4]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][4]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][4]['value']; ?></td>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][5]['value'])) {
+          print $node->field_units['und'][5]['value'];
+        } ?>
+      </td>
+      <td width="50%">
+      <?php if (isset($node->field_description['und'][5]['value'])) {
+          print $node->field_description['und'][5]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][5]['value'])) {
+          print $node->field_gross['und'][5]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][5]['value'])) {
+        print $node->field_tare['und'][5]['value'];
+        } ?>
+      </td>
       <td width="10%">&nbsp;</td>
     </tr>
     <tr>
-      <td width="10%"><?php print $node->field_units['und'][5]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][5]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][5]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][5]['value']; ?></td>
-      <td width="10%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="10%"><?php print $node->field_units['und'][6]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][6]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][6]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][6]['value']; ?></td>
-      <td width="10%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="10%"><?php print $node->field_units['und'][7]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][7]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][7]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][7]['value']; ?></td>
-      <td width="10%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="10%"><?php print $node->field_units['und'][8]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][8]['value']; ?></td>
-      <td width="10%"><?php print $node->field_gross['und'][8]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][8]['value']; ?></td>
-      <td width="10%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="10%"><?php print $node->field_units['und'][9]['value']; ?></td>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][6]['value'])) {
+          print $node->field_units['und'][6]['value'];
+        } ?>
+      </td>
       <td width="60%">
-      <?php
-        if (isset($node->field_description['und'][9]['value'])) {
+      <?php if (isset($node->field_description['und'][6]['value'])) {
+          print $node->field_description['und'][6]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][6]['value'])) {
+          print $node->field_gross['und'][6]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][6]['value'])) {
+        print $node->field_tare['und'][6]['value'];
+        } ?>
+      </td>
+      <td width="10%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][7]['value'])) {
+          print $node->field_units['und'][7]['value'];
+        } ?>
+      </td>
+      <td width="60%">
+      <?php if (isset($node->field_description['und'][7]['value'])) {
+          print $node->field_description['und'][7]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][7]['value'])) {
+          print $node->field_gross['und'][7]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][7]['value'])) {
+        print $node->field_tare['und'][7]['value'];
+        } ?>
+      </td>
+      <td width="10%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][8]['value'])) {
+          print $node->field_units['und'][8]['value'];
+        } ?>
+      </td>
+      <td width="60%">
+      <?php if (isset($node->field_description['und'][8]['value'])) {
+          print $node->field_description['und'][8]['value'];
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][8]['value'])) {
+          print $node->field_gross['und'][8]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][8]['value'])) {
+        print $node->field_tare['und'][8]['value'];
+        } ?>
+      </td>
+      <td width="10%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="10%">
+        <?php if (isset($node->field_units['und'][9]['value'])) {
+          print $node->field_units['und'][9]['value'];
+        } ?>
+      </td>
+      <td width="60%">
+      <?php if (isset($node->field_description['und'][9]['value'])) {
           print $node->field_description['und'][9]['value'];
-        }
-      ?>
-    </td>
-      <td width="10%"><?php print $node->field_gross['und'][9]['value']; ?></td>
-      <td width="10%"><?php print $node->field_tare['und'][9]['value']; ?></td>
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_gross['und'][9]['value'])) {
+          print $node->field_gross['und'][9]['value']; 
+        } ?>
+      </td>
+      <td width="10%">
+        <?php if (isset($node->field_tare['und'][9]['value'])) {
+        print $node->field_tare['und'][9]['value'];
+        } ?>
+      </td>
       <td width="10%">&nbsp;</td>
     </tr>
   </tbody>
