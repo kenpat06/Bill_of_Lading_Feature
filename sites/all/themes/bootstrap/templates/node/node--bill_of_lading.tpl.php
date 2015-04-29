@@ -107,10 +107,10 @@
 <table width="100%" class="table table-striped table-bordered">
   <tbody>
     <tr>
-      <td>BOL#</td>
+      <td><?php print render($content['field_bol_number']); ?></td>
     </tr>
     <tr>
-      <td>Date</td>
+      <td><?php print render($content['field_date']); ?></td>
     </tr>
     <tr>
       <td><?php print render($content['field_po_number']); ?></td>
@@ -148,15 +148,15 @@
       <td colspan="2">Sold To:</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
+      <td><?php print render($content['field_consignee']); ?></td>
       <td>&nbsp;</td>
     </tr>
     <tr>
+      <td><?php print render($content['field_bill_to_address_1']); ?></td>
       <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><?php print render($content['field_bill_to_state']); ?> <?php print render($content['field_ship_to_zip']); ?></td>
       <td>&nbsp;</td>
     </tr>
   </tbody>
