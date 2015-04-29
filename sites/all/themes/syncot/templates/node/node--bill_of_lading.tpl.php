@@ -218,7 +218,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][0]['value'];
         } ?>
       </td>
-      <td width="00%">&nbsp;</td>
+      <td width="00%"><?php print $node->field_net0['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -241,7 +241,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][1]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net1['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
