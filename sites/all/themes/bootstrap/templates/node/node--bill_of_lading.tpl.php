@@ -102,7 +102,13 @@
     hide($content['field_tags']);
       ?>
 
-<span class="btn btn-success .btn-lg">Download PDF</span>
+<?php
+if ($node = menu_get_object()) {
+ $nid = $node->nid;
+}
+?>
+
+<a href="/fillpdf?fid=2&nid=<?php print $nid ?>" class="btn btn-success btn-large"><i class="icon-white icon-file"></i> Download PDF</a>
 
 <table width="100%" class="table table-striped table-bordered">
   <tbody>
