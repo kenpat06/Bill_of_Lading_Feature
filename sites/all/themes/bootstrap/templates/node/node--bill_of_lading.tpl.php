@@ -262,7 +262,12 @@ if ($node = menu_get_object()) {
     </tr>
     <tr>
       <td width="10%"><?php print $node->field_units['und'][9]['value']; ?></td>
-      <td width="60%"><?php print $node->field_description['und'][9]['value']; ?></td>
+      <td width="60%">
+      <?php
+        if (isset($node->field_description['und'][9]['value'])) {
+        print $node->field_description['und'][9]['value'];
+      }
+        ?></td>
       <td width="10%"><?php print $node->field_gross['und'][9]['value']; ?></td>
       <td width="10%"><?php print $node->field_tare['und'][9]['value']; ?></td>
       <td width="10%">&nbsp;</td>
