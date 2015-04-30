@@ -198,27 +198,27 @@ if ($node = menu_get_object()) {
       <th width="10%">Net</th>
     </tr>
     <tr>
-      <td width="00%">
+      <td width="10%">
         <?php if (isset($node->field_units['und'][0]['value'])) {
           print $node->field_units['und'][0]['value'];
         } ?>
       </td>
-      <td width="00%">
+      <td width="60%">
       <?php if (isset($node->field_description['und'][0]['value'])) {
           print $node->field_description['und'][0]['value'];
         } ?>
       </td>
-      <td width="00%">
+      <td width="10%">
         <?php if (isset($node->field_gross['und'][0]['value'])) {
           print $node->field_gross['und'][0]['value']; 
         } ?>
       </td>
-      <td width="00%">
+      <td width="10%">
         <?php if (isset($node->field_tare['und'][0]['value'])) {
         print $node->field_tare['und'][0]['value'];
         } ?>
       </td>
-      <td width="00%"><?php print $node->field_net0['und'][0]['value']; ?></td>
+      <td width="10%"><?php print $node->field_net0['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -226,7 +226,7 @@ if ($node = menu_get_object()) {
           print $node->field_units['und'][1]['value'];
         } ?>
       </td>
-      <td width="10%">
+      <td width="60%">
       <?php if (isset($node->field_description['und'][1]['value'])) {
           print $node->field_description['und'][1]['value'];
         } ?>
@@ -249,7 +249,7 @@ if ($node = menu_get_object()) {
           print $node->field_units['und'][2]['value'];
         } ?>
       </td>
-      <td width="20%">
+      <td width="60%">
       <?php if (isset($node->field_description['und'][2]['value'])) {
           print $node->field_description['und'][2]['value'];
         } ?>
@@ -264,7 +264,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][2]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net2['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -272,7 +272,7 @@ if ($node = menu_get_object()) {
           print $node->field_units['und'][3]['value'];
         } ?>
       </td>
-      <td width="30%">
+      <td width="60%">
       <?php if (isset($node->field_description['und'][3]['value'])) {
           print $node->field_description['und'][3]['value'];
         } ?>
@@ -287,7 +287,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][3]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net3['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -295,7 +295,7 @@ if ($node = menu_get_object()) {
           print $node->field_units['und'][4]['value'];
         } ?>
       </td>
-      <td width="40%">
+      <td width="60%">
       <?php if (isset($node->field_description['und'][4]['value'])) {
           print $node->field_description['und'][4]['value'];
         } ?>
@@ -310,7 +310,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][4]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net4['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -318,7 +318,7 @@ if ($node = menu_get_object()) {
           print $node->field_units['und'][5]['value'];
         } ?>
       </td>
-      <td width="50%">
+      <td width="60%">
       <?php if (isset($node->field_description['und'][5]['value'])) {
           print $node->field_description['und'][5]['value'];
         } ?>
@@ -333,7 +333,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][5]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net5['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -356,7 +356,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][6]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net6['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -379,7 +379,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][7]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net7['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -402,7 +402,7 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][8]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net8['und'][0]['value']; ?></td>
     </tr>
     <tr>
       <td width="10%">
@@ -425,7 +425,13 @@ if ($node = menu_get_object()) {
         print $node->field_tare['und'][9]['value'];
         } ?>
       </td>
-      <td width="10%">&nbsp;</td>
+      <td width="10%"><?php print $node->field_net9['und'][0]['value']; ?></td>
+    </tr>
+    <tr class="info">
+      <td colspan="2">&nbsp;</td>
+      <td><em><?php print $node->field_totalgross['und'][0]['value']; ?></em></td>
+      <td><em><?php print $node->field_totaltare['und'][0]['value']; ?></em></td>
+      <td><em><?php print $node->field_totalnet['und'][0]['value']; ?></em></td>
     </tr>
   </tbody>
 </table>
